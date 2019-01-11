@@ -12,11 +12,13 @@
 </head>
 <body>
   <header>
+    <!--
     <img src="./assets/images/california-logo.jpg">
+  -->
     <a href="#" class="btn">Get in Touch</a>
     <nav>
       <ul>
-        <li><a href="#grand-canyon">Grand Canyon</a></li>
+        <li><a href="#grand-canyon-day">Grand Canyon</a></li>
         <li><a href="#scenic-road">Scenic Road</a></li>
         <li><a href="#san-francisco">San Francisco</a></li>
       </ul>
@@ -24,27 +26,43 @@
   </header>
 
   <div class="grand-canyon">
-    <img src="./assets/images/pic1.jpg" alt="Pavel facing the Grand Canyon">
-    <div class="grand-canyon__text-content">
-    <h1 class="grand-canyon__title">Our California</h1>
-    <h2 class="grand-canyon__subtitle">Grand Canyon</h2>
-    <p class="grand-canyon__quote">Travel makes one modest. You see what a tiny place you occupy in this world.</p>
-    <a href="#" class="btn btn--orange btn--large">Get in Touch</a>
+    <picture>
+      <source srcset="./assets/images/main-photo.jpg" media="(min-width: 640px)">
+      <img src="./assets/images/main-photo-crop2.jpg" alt="Julia and Vera seating on the beanch." class="grand-canyon__image">
+    </picture>
+
+     <div class="grand-canyon__text-content">
+      <div class="wrapper">
+       <h1 class="grand-canyon__title">Our west coast trip</h1>
+       <p class="grand-canyon__quote">Travel makes one modest. You see what a tiny place you occupy in this world.</p>
+       <a href="#" class="btn btn--orange btn--large">Get in Touch</a>
+      </div>
    </div>
   </div>
 
-  <div id="grand-canyon">
-    <h2>We started our trip from Grand Canyon.</h2>
-    <h3>Ever since, we’ve been thinking about this breathtaing place.</h3>
+  <div id="grand-canyon-day" class="page-section">
+    <div class="wrapper">
+      <h2 class="headline headline--centered headline--light headline--b-margin-small">We started our trip from <strong>Grand Canyon</strong>.</h2>
+      <h3 class="headline headline--centered headline--light headline--orange headline--small headline--narrow headline--b-margin-large">Ever since, we’ve been thinking about this <strong>breathtaking place.</strong></h3>
 
-    <img src="assets/images/julia-and-vera.jpg" alt="Julia and Vera seating on the beanch.">
-    <p>This is our trip to California. I'll share with you our pictures and great moment.<br> We started our trip from sunny Arizona. Our friends Alex and Vera live there and they were amaizing guids during our stay in Arizona.<br> We visited <em>Grand Canyon</em> and <em>Horseshoe Bend</em>. They located within 3 hours of drive from each other and if you wake up earlier one day should be enogh to see both places. We rented a nice cabin through AirBnb in Flagstaff. We're impressed how mother nature can be so beauitiful. Both places was breathtaking and ofcourse ideal for serious photoshoot.</p>
-    <img src="./assets/images/pavel-julia.jpg" alt="Pavel lifting Julia">
+     
+    <div class="wrapper--medium">
+     <img src="assets/images/julia-and-vera.jpg" alt="Julia and Vera seating on the beanch.">
+    </div>
+    
+    <div class="row row--gutters">
+      <div class="row__photo-medium"><img src="./assets/images/pavel-julia.jpg" alt="Pavel lifting Julia"></div>
+      <div class="row__text-medium">
+        <h2 class="headline headline--centered headline--light headline--b-margin-small">Some text here...</h2>
+        <p>This is our trip to California. I'll share with you our pictures and great moment.<br> We started our trip from sunny Arizona. Our friends Alex and Vera live there and they were amaizing guids during our stay in Arizona.<br> We visited <em>Grand Canyon</em> and <em>Horseshoe Bend</em>. They located within 3 hours of drive from each other and if you wake up earlier one day should be enogh to see both places. We rented a nice cabin through AirBnb in Flagstaff. We're impressed how mother nature can be so beauitiful. Both places was breathtaking and ofcourse ideal for serious photoshoot.</p>
+    </div>
+
+    </div>
     <h2>Here&rsquo;s how we got started our trip</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
-  </div>
+  
 
 <div class="image-gallery">
   <img src="./assets/images/julia.jpg" alt="Julia seating on the rock.">
@@ -52,8 +70,7 @@
   <img src="./assets/images/alex-vera.jpg" alt="Alex and Vera.">
   <img src="./assets/images/lusya.jpg" alt="Julia's mother.">
   <img src="./assets/images/julia-horse-shoe.jpg" alt="Photo of Julia.">
-
-
+ </div>
 </div>
 
   <div id="scenic-road">

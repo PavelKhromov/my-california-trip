@@ -1,10 +1,16 @@
 .grand-canyon {
+	border-bottom: 10px solid $mainBlue;
 	position: relative;
 
+&__image {
+	display: block;
+}	
+
+
 &__text-content {
-	position: absolute;
+    position: absolute;
 	top: 50%;
-	transform: translateY(-45%);
+	transform: translateY(-30%);
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -13,28 +19,47 @@
 &__title {
 	font-weight: 350;
 	color: #FFF;
-	font-size: 4.6rem; 
 	margin: 0;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+	font-size: 2rem;
 
-}
+	@mixin atSmall {
+		font-size: 3rem;
+	}
 
-&__subtitle {
-	font-weight: 300;
-	color: #FFF;
-	font-size: 2.8rem;
-	margin: 0;
-	text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+	@mixin atMedium {
+		font-size: 4rem;
+	}
+
+	@mixin atLarge {
+		font-size: 5rem;
+	}
 }
 
 &__quote {
 	color: #FFF;
-	font-size: 1.875rem;
-	font-weight: 100;
+	font-weight: 300;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
-	max-width: 34rem;
+	max-width: 22rem;
 	margin-right: auto;
 	margin-left: auto;
+	font-size: 1.2rem;
+
+	@mixin atSmall {
+		font-size: 1.5rem;
+		max-width: 28rem;
+	}
+
+	@mixin atMedium {
+		font-size: 2.2rem;
+		max-width: 38rem;
+	}
+
+	@mixin atLarge {
+		font-size: 2.8rem;
+		max-width: 58rem;
+	}
 }
+
 
 }

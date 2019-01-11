@@ -1,0 +1,26 @@
+.row {
+
+	@mixin clearfix;
+
+	&--gutters {
+		margin-right: -65px;
+	}
+
+	&--gutters > div {
+		padding-right: 65px;
+		box-sizing: border-box;
+	}
+
+	@mixin atMedium {
+		&__photo-medium {
+		float: left;
+		width: 45%
+	}
+
+	&__text-medium {
+		float: left;
+		width: 55%
+	}
+
+	}	
+}
