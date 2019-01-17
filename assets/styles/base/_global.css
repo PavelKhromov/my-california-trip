@@ -9,6 +9,11 @@ img {
 	height: auto;
 }
 
+a {
+	color: $mainOrange;
+	text-decoration: none;
+}
+
 * {
 	box-sizing: border-box;
 }
