@@ -11,19 +11,29 @@
 
 </head>
 <body>
-  <header>
-    <!--
-    <img src="./assets/images/california-logo.jpg">
-  -->
-    <a href="#" class="btn">Get in Touch</a>
-    <nav>
-      <ul>
-        <li><a href="#grand-canyon-day">Grand Canyon</a></li>
-        <li><a href="#Highway Number One">Highway Number One</a></li>
-        <li><a href="#trip-information">Trip information</a></li>
-        <li><a href="#heroes">Our Heroes</a></li>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+      <img src="./assets/images/california-logo1.jpg">
+    </div>
+
+    <div class="site-header__menu-icon"></div>
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+        <a href="#" class="btn">Get in Touch</a>
+      </div>
+       <nav class="primary-nav primary-nav--pull-right">
+        <ul>
+         <li><a href="#grand-canyon-day">Grand Canyon</a></li>
+         <li><a href="#Highway Number One">Highway Number One</a></li>
+         <li><a href="#trip-information">Trip information</a></li>
+         <li><a href="#heroes">Our Heroes</a></li>
       </ul>
     </nav>
+      </div>
+   </div>
+    
+
   </header>
 
   <div class="grand-canyon">
@@ -209,9 +219,15 @@
       </div>
     </div>
   </div>
+</div>
 
-  <footer>
-    <p>Copyright &copy; 2018 Our California. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
+  <footer class="site-footer">
+    <div class="wrapper">
+      <p><span class="site-footer__text">Copyright &copy; 2018 Our California. All rights reserved.</span><a href="#" class="btn btn--orange">Get in Touch</a></p>
+    </div>
+    
   </footer>
+
+  <script src="/assets/scripts/App.js"></script>
 </body>
 </html>

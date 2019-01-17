@@ -651,6 +651,7 @@ a {
 
 .page-section--heroes {
 		background-color: #e0e6ef;
+		margin-bottom: -36px;
 		
 	}
 
@@ -658,7 +659,8 @@ a {
 
 .page-section--heroes {
 			background: url('/assets/images/pavel-canyon.jpg') top center no-repeat;
-		    background-size: cover
+		    background-size: cover;
+		    margin-bottom: -72px
 		
 	}
 	}
@@ -950,6 +952,132 @@ a {
 		font-weight: 500;
 		margin: .5rem 0 .1rem 0;
 	}
+
+.site-footer {
+	background-color: #2f5572;
+	color: #FFF;
+	padding: .5rem 0;
+	text-align: center;
+}
+
+.site-footer__text {
+		display: block;
+		margin-bottom: 1rem;
+		font-weight: 200;
+	}
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+			display: inline;
+			margin-bottom: 0;
+			margin-right: 1.4rem
+	}
+	}
+
+.site-header {
+	padding: 10px 0;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+		background-color: rgba(47, 85, 114, .5)
+
+}
+	}
+
+.site-header__btn-container {
+		float: right;
+	}
+
+.site-header__logo {
+		position: absolute;
+        top: 0;
+        background-color: rgba(47, 85, 114, .5);
+        padding: 13px 20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%) scale(.7);
+                transform: translateX(-50%) scale(.7);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+
+
+    }
+
+@media (min-width: 530px) {
+	}
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+        	left: auto;
+        	-webkit-transform: translateX(0);
+        	        transform: translateX(0)
+
+
+    }
+	}
+
+.site-header__menu-icon {
+        	width: 20px;
+        	height: 20px;
+        	background-color: #FFF;
+        	position: absolute;
+        	top: 10px;
+        	right: 10px;
+        }
+
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+        		display: none
+        }
+	}
+
+.site-header__menu-content {
+		display: none;
+	}
+
+@media (min-width: 800px) {
+
+.site-header__menu-content {
+			display: block
+	}
+	}
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+  }
+
+.primary-nav a {
+    color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 12px 0;
+  }
 
 
 
