@@ -78,6 +78,7 @@
 	  function MobileMenu() {
 	    _classCallCheck(this, MobileMenu);
 
+	    this.siteHeader = (0, _jquery2.default)(".site-header");
 	    this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
 	    this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
 	    this.events();
@@ -92,6 +93,8 @@
 	    key: "toggleTheMenu",
 	    value: function toggleTheMenu() {
 	      this.menuContent.toggleClass("site-header__menu-content--is-visible");
+	      this.siteHeader.toggleClass("site-header--is-expanded");
+	      this.menuIcon.toggleClass("site-header__menu-icon--close-x");
 	    }
 	  }]);
 
