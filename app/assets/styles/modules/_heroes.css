@@ -24,6 +24,29 @@
 		border: 5px solid rgba(255, 255, 255, .8);
 	}
 
+	&__photo-gallery {
+
+	    padding: 1px 1px 1px 1px;
+		overflow: hidden;
+		width: 200px;
+		height: 200px;
+		margin: 10px auto -80px -1.2rem;
+		position: relative;
+		top: -80px;
+		border: 1px solid rgba(255, 255, 255, .8);
+		
+
+    	&__photo-gallery a {
+    		
+    	box-sizing: border-box;
+
+
+    	}
+
+
+
+	}
+
 	&__title {
 		color: $mainBlue;
 		text-align: center;

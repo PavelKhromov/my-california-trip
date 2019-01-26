@@ -475,7 +475,7 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .grand-canyon__title {
     font-size: 4rem;
@@ -507,7 +507,7 @@ a {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .grand-canyon__quote {
     font-size: 2.2rem;
@@ -568,7 +568,7 @@ a {
   padding-right: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .wrapper--no-padding-until-medium {
     padding-left: 18px;
@@ -596,7 +596,7 @@ a {
   padding: 1.2rem 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .page-section {
     padding: 4.5rem 0;
@@ -607,7 +607,7 @@ a {
   padding-bottom: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .page-section--no-b-padding-until-medium {
     padding-bottom: 4.5rem;
@@ -624,7 +624,7 @@ a {
   margin-bottom: -36px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .page-section--heroes {
     background: url('/assets/images/pavel-canyon.jpg') top center no-repeat;
@@ -725,7 +725,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .row__b-margin-until-medium {
     margin-bottom: 0;
@@ -741,6 +741,13 @@ a {
     width: 55%;
   }
 
+  .row__medium-2 {
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
   .row__medium-4 {
     float: left;
     width: 33.33%;
@@ -754,7 +761,7 @@ a {
 
 /*Begin Equal Height Rules */
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .row--equal-height-at-medium {
     display: -ms-flexbox;
@@ -880,7 +887,7 @@ a {
 	margin-bottom: 98px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .heroes {
     margin-bottom: 0;
@@ -901,6 +908,21 @@ a {
   position: relative;
   top: -80px;
   border: 5px solid rgba(255, 255, 255, .8);
+}
+
+.heroes__photo-gallery {
+  padding: 1px 1px 1px 1px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto -80px -1.2rem;
+  position: relative;
+  top: -80px;
+  border: 1px solid rgba(255, 255, 255, .8);
+}
+
+.heroes__photo-gallery__photo-gallery a {
+  box-sizing: border-box;
 }
 
 .heroes__title {
@@ -924,7 +946,7 @@ a {
   font-weight: 200;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-footer__text {
     display: inline;
@@ -946,14 +968,19 @@ a {
   background-color: rgba(47, 85, 114, .5);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-header {
-    background-color: rgba(47, 85, 114, .5);
+    background-color: rgba(47, 85, 114, .4);
+    position: fixed;
+  }
+
+  .site-header--dark {
+    background-color: rgba(23, 51, 72, .85);
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-header__btn-container {
     float: right;
@@ -968,15 +995,20 @@ a {
   left: 50%;
   transform: translateX(-50%) scale(.7);
   transform-origin: 50% 0%;
+  transition: transform .3s ease-out;
 }
 
 @media (min-width: 530px) {}
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-header__logo {
     left: auto;
     transform: translateX(0);
+  }
+
+  .site-header--dark .site-header__logo {
+    transform: scale(.63);
   }
 }
 
@@ -1024,7 +1056,7 @@ a {
   transition: transform .3s ease-out;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-header__menu-icon {
     display: none;
@@ -1054,7 +1086,7 @@ a {
   text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .site-header__menu-content {
     opacity: 1;
@@ -1070,7 +1102,7 @@ a {
   transform: scale(1);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .primary-nav--pull-right {
     float: right;
@@ -1096,7 +1128,7 @@ a {
   margin-top: .5rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .primary-nav li {
     padding-right: 20px;
@@ -1109,7 +1141,7 @@ a {
   padding-right: 0;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .primary-nav li: last-child {
     padding-right: 20px;
@@ -1126,13 +1158,28 @@ a {
   background-color: rgba(47, 85, 114, .7);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 820px) {
 
   .primary-nav a {
     font-size: 1rem;
     padding: 12px 0;
     background-color: transparent;
   }
+
+  .primary-nav a.is-current-link {
+    color: #fabb69;
+  }
+}
+
+.reveal-item {
+	opacity: 0;
+	transition: all 1.5s ease-out;
+	transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 

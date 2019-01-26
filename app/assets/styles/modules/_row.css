@@ -51,12 +51,19 @@
 		width: 55%
 	}
 
+	&__medium-2 {
+    	float: left;
+    	width: 25%;
+    	padding-right: 15px;
+    	box-sizing: border-box;
+    }
+
 	&__medium-4 {
       float: left;
       width: 33.33%;
     }
 
-	&__medium-6 {
+    &__medium-6 {
 		float: left;
 		width: 50%;
 	 }
