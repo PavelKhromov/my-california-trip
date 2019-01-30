@@ -2,6 +2,15 @@
 
 	@mixin clearfix;
 
+	&--gallery > div {
+		padding-right: 10px;
+		box-sizing: border-box;
+	}
+
+	&--gallery {
+		margin-right: -10px;
+	}
+
 	&--t-padding {
 		padding-top: 80px;
 	}
@@ -52,11 +61,44 @@
 	}
 
 	&__medium-2 {
-    	float: left;
-    	width: 25%;
-    	padding-right: 15px;
-    	box-sizing: border-box;
+		float: left;
+    	width: 100%;
+    	@mixin atMedium {
+    		width: 25%;
+    		float: left;
+    		padding-right: 15px;
+    	    box-sizing: border-box; 
+    	} 
     }
+
+
+    &__medium-3 {
+    	float: left;
+
+    	@mixin atSmall {
+    		
+    		width: 50%;
+    	}
+    	
+    	
+
+
+    	@mixin atMedium {
+    		width: 50%;
+    	}
+    	
+    	
+
+
+    	@mixin atLarge {
+    	
+    	width: 25%;
+    }
+   }
+
+
+    
+    
 
 	&__medium-4 {
       float: left;

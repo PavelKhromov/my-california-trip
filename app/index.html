@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
   <title>Our California</title>
   <meta name="keywords" content="Travel">
   <meta name="description" content="Our trip to west coast the best coast.">
 
-  <link rel="stylesheet" href="/temp/styles/styles.css">
-  <link rel="stylesheet" href="css/lightbox.min.css">
-
   
 
+  <link rel="stylesheet" href="/temp/styles/styles.css">
+
+  <link rel="stylesheet" href="/temp/styles/lightbox.min.css">
+
+  <script src="/temp/scripts/lightbox-plus-jquery.min.js"></script>
+
 </head>
+
 <body>
   <header class="site-header">
     <div class="wrapper">
@@ -26,13 +30,10 @@
       
     </div>
       <div class="site-header__menu-content">
-        <!--<div class="site-header__btn-container">
-        <a href="#" class="btn">Get in Touch</a>
-      </div> -->
-       <nav class="primary-nav primary-nav--pull-right">
+        <nav class="primary-nav primary-nav--pull-right">
         <ul>
          <li><a href="#grand-canyon-day" id="grand-canyon-link">Grand Canyon</a></li>
-         <li><a href="#Highway Number One" id="higway-number-one-link">Highway Number One</a></li>
+         <li><a href="#gallery" id="gallery-link">Gallery</a></li>
          <li><a href="#trip-information" id="trip-information-link">Trip information</a></li>
          <li><a href="#heroes" id="heroes-link">Our Heroes</a></li>
       </ul>
@@ -53,7 +54,7 @@
       <div class="wrapper">
        <h1 class="grand-canyon__title">Our west coast trip</h1>
        <p class="grand-canyon__quote">Travel makes one modest. You see what a tiny place you occupy in this world.</p>
-       <a href="#" class="btn btn--orange btn--large">Get in Touch</a>
+       <a href="#" class="btn open-modal btn--orange btn--large">Let's Talk</a>
       </div>
    </div>
   </div>
@@ -83,127 +84,48 @@
       </div>
     </div>
   </div>
-
-    
-    <div id="Highway Number One" class="page-section1" data-matching-link="#higway-number-one-link">
-    <h2>Here&rsquo;s how we got started our trip</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-  </div>
-  
-  <!-- Start --><!-- >
-    <div id="heroes" class="page-section page-section--no-b-until-medium page-section--heroes" data-matching-link="#heroes-link">
-    <div class="wrapper wrapper--no-padding-until-medium">
-      <h2 class="section-title section-title--blue"> Our <strong>Heroes</strong></h2>
-
-      <div class="row row--equal-height-at-medium row--gutters row--gutters-small row--t-padding generic-container">
-        <div class="row__medium-4">
-          <div class="heroes">
-            <div class="heroes__photo">
-             <img src="assets/images/julia-hero.jpg">
-            </div>
-            !-->
-
-  <div id="heroes" class="page-section page-section--no-b-until-medium " data-matching-link="">
-    <div class="wrapper wrapper--no-padding-until-medium">
-      
-
-      <div class="row row--equal-height-at-medium row--gutters row--gutters-small row--t-padding">
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/julia.jpg" data-lightbox="galleryy"> <img src="assets/images/julia-thumb.jpg" alt="Julia seating on the rock."></a>
-            </div>
-           </div>
-        </div>
-
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/pavel-and-julia.jpg"><img src="assets/images/pavel-and-julia-thumb.jpg" alt="Pavel and Julia."></a>
-            </div>
-           </div>
-        </div>
-
-         <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/alex-vera.jpg"><img src="assets/images/alex-vera-thumb.jpg" alt="Alex and Vera."></a>
-            </div>
-           </div>
-        </div>
-
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/ira1.jpg"><img src="assets/images/ira1-thumb.jpg" alt="Photo of Ira."></a>
-            </div>
-           </div>
-        </div>
-      </div>
-
-
-      <div class="row row--equal-height-at-medium row--gutters row--gutters-small row--t-padding">
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/luda.jpg"><img src="assets/images/luda-thumb.jpg" alt="Photo of Luda."></a>
-            </div>
-           </div>
-        </div>
-
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/julia2.jpg"><img src="assets/images/julia2-thumb.jpg" alt="Photo of Julia."></a>
-            </div>
-           </div>
-        </div>
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/pavel1.jpg"><img src="assets/images/pavel1-thumb.jpg" alt="Photo of Pavel."></a>
-            </div>
-           </div>
-        </div>
-        <div class="row__medium-2">
-          <div class="heroes">
-            <div class="heroes__photo-gallery">
-             <a href="assets/images/sunset.jpg"><img src="assets/images/sunset-thumb.jpg" alt="Grand Canyon Sunset."></a>
-            </div>
-           </div>
-        </div>
-      </div>
-        
-        <!--
-
-
-   Gallery
-  
-  
-  
-  
-  
-  !-->
  </div>
 </div>
-</div>
 
-  <div class="wrapper">
-  <div id="scenic-road">
-    <!--<img src="assets/images/scenic-road.jpg" alt="Photo of scenic road.">!-->
-    <h2>You got to go down a lot of wrong roads to find the right one.</h2>
-    <p>And seems like highway One is the right one.</p>
 
-    <img src="assets/images/los-angeles.jpg" alt="Pavel in Los Angeles">
+
+
+<div id="gallery" class="page-section" data-matching-link="#gallery-link">
+  <div class="wrapper page-section">
+
+  <div class="row row--gallery">
+
+    <div class="row__medium-3"><a href="assets/images/julia.jpg" data-lightbox="gallery"> <img src="assets/images/julia-thumb.jpg" alt="Julia seating on the rock."></a></div>
+    
+
+    <div class="row__medium-3"><a href="assets/images/pavel-and-julia.jpg" data-lightbox="gallery"><img src="assets/images/pavel-and-julia-thumb.jpg" alt="Pavel and Julia."></a></div>
+
+    <div class="row__medium-3"><a href="assets/images/alex-vera.jpg" data-lightbox="gallery"><img src="assets/images/alex-vera-thumb.jpg" alt="Alex and Vera."></a></div>
+
+    <div class="row__medium-3"><a href="assets/images/ira1.jpg" data-lightbox="gallery"><img src="assets/images/ira1-thumb.jpg" alt="Photo of Ira."></a></div>
 
   </div>
 
+
+
+<div class="wrapper page-section">
+  <div class="row row--gallery">
+
+    <div class="row__medium-3"><a href="assets/images/luda.jpg" data-lightbox="gallery"><img src="assets/images/luda-thumb.jpg" alt="Photo of Luda."></a></div>
+
+    <div class="row__medium-3"><a href="assets/images/julia2.jpg" data-lightbox="gallery"><img src="assets/images/julia2-thumb.jpg" alt="Photo of Julia."></a></div>
+
+    <div class="row__medium-3"><a href="assets/images/pavel1.jpg" data-lightbox="gallery"><img src="assets/images/pavel1-thumb.jpg" alt="Photo of Pavel."></a></div>
+
+    <div class="row__medium-3"><a href="assets/images/sunset.jpg" data-lightbox="gallery"><img src="assets/images/sunset-thumb.jpg" alt="Grand Canyon Sunset."></a></div>
+  </div>
 </div>
 
+  </div>
+ </div>
 
 
-    
+
    <div id="trip-information" class="page-section page-section--blue" data-matching-link="#trip-information-link">
     <div class="wrapper">
     
@@ -318,17 +240,32 @@
   </div>
 </div>
 
+
   <footer class="site-footer">
     <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2018 Our California. All rights reserved.</span><a href="#" class="btn btn--orange">Get in Touch</a></p>
+      <p><span class="site-footer__text">Copyright &copy; 2018 Our California. All rights reserved.</span><a href="#" class="btn btn--orange open-modal">Let's talk</a></p>
     </div>
     
   </footer>
 
-  <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+  <div class="modal">
+    <div class="modal__inner">
+      <h2 class="section-title section-title--blue section-title--less-margin"> Let's <strong>Talk</strong></h2>
+    <div class="wrapper wrapper--narrow">
+     <p class="modal__text">You can ask me all about this trip in social media.</p>
+   </div>
 
-  <script src="/temp/scripts/App.js"></script>
+   <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=1203663966" target="_blank" class="social-icons--icon"><img src="assets/images/icons/facebook.png"></a>
+    <a href="https://www.youtube.com/user/HromovPavel/videos?view=0&shelf_id=0&view_as=subscriber&sort=dd" target="_blank" class="social-icons--icon"><img src="assets/images/icons/youtube.png"></a>
+    <a href="https://www.instagram.com/pavelhromov/" class="social-icons--icon" target="_blank"> <img src="assets/images/icons/insta.png"></a>
+    </div>
+  </div>
 
+  <div class="modal__close">X</div>
+  </div>
+
+<script src="/temp/scripts/App.js"></script>
 
 
 </body>

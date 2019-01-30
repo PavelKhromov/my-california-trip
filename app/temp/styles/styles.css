@@ -468,7 +468,7 @@ a {
   font-size: 2rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .grand-canyon__title {
     font-size: 3rem;
@@ -499,7 +499,7 @@ a {
   font-size: 1.2rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .grand-canyon__quote {
     font-size: 1.5rem;
@@ -542,7 +542,7 @@ a {
   padding: 0.75rem 1.4rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .btn--large {
     font-size: 1.25rem;
@@ -561,6 +561,10 @@ a {
 
 .wrapper--medium {
   max-width: 976px;
+}
+
+.wrapper--narrow {
+  max-width: 470px;
 }
 
 .wrapper--no-padding-until-medium {
@@ -585,7 +589,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .wrapper--b-margin {
     margin-bottom: 2.875rem;
@@ -639,7 +643,7 @@ a {
 	color: #2f5572;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .headline {
     font-size: 2.875rem;
@@ -658,7 +662,7 @@ a {
   font-size: 1.4rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .headline--small {
     font-size: 1.875rem;
@@ -691,6 +695,15 @@ a {
   content: "";
   clear: both;
   display: table;
+}
+
+.row--gallery > div {
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.row--gallery {
+  margin-right: -10px;
 }
 
 .row--t-padding {
@@ -743,9 +756,42 @@ a {
 
   .row__medium-2 {
     float: left;
-    width: 25%;
-    padding-right: 15px;
-    box-sizing: border-box;
+    width: 100%;
+  }
+
+  @media (min-width: 820px) {
+
+    .row__medium-2 {
+      width: 25%;
+      float: left;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+  }
+
+  .row__medium-3 {
+    float: left;
+  }
+
+  @media (min-width: 430px) {
+
+    .row__medium-3 {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 820px) {
+
+    .row__medium-3 {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1010px) {
+
+    .row__medium-3 {
+      width: 25%;
+    }
   }
 
   .row__medium-4 {
@@ -780,7 +826,7 @@ a {
   margin: 0 0 1.6rem 0;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .generic-container {
     font-size: 1.125rem;
@@ -800,7 +846,7 @@ a {
 
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .section-title {
     font-size: 3.75rem;
@@ -816,6 +862,11 @@ a {
   color: #2f5572
 }
 
+.section-title--less-margin {
+  margin-bottom: 1.1rem;
+  margin-top: 0;
+}
+
 .section-title__icon {
   display: block;
   margin-left: auto;
@@ -824,7 +875,7 @@ a {
   transform: translateY(20%);
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .section-title__icon {
     margin-right: .5rem;
@@ -839,7 +890,7 @@ a {
 	padding-bottom: 2.5rem;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .information-item {
     padding-left: 96px;
@@ -851,7 +902,7 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .information-item__icon {
     position: absolute;
@@ -868,7 +919,7 @@ a {
   text-align: center;
 }
 
-@media (min-width: 530px) {
+@media (min-width: 430px) {
 
   .information-item__title {
     text-align: left;
@@ -998,7 +1049,7 @@ a {
   transition: transform .3s ease-out;
 }
 
-@media (min-width: 530px) {}
+@media (min-width: 430px) {}
 
 @media (min-width: 820px) {
 
@@ -1181,6 +1232,72 @@ a {
   opacity: 1;
   transform: scale(1);
 }
+
+.modal {
+	position: fixed;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, .94);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.2);
+	transition: all .3s ease-out;
+}
+
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.modal__inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal__text {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.65;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  transform: scaleX(1.2);
+  transform-origin: 100% 0;
+  color: #2f5572;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: #d59541;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.social-icons__icons {
+  background-color: #d59541;
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+
+.social-icons__icons .icon {
+  display: block;
+  position: absolute;
+}
+
 
 
 
