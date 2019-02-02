@@ -809,13 +809,13 @@ a {
 
 @media (min-width: 820px) {
 
-  .row--equal-height-at-medium {
+  .flexbox .row--equal-height-at-medium {
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.row--equal-height-at-medium > div {
+.flexbox .row--equal-height-at-medium > div {
   float: none;
   display: -ms-flexbox;
   display: flex;
