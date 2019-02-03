@@ -24,7 +24,7 @@
 		margin-bottom: -36px;
 
 		@mixin atMedium {
-			background: url('/assets/images/pavel-canyon.jpg') top center no-repeat;
+			background: url('../../assets/images/pavel-canyon.jpg') top center no-repeat;
 		    background-size: cover;
 		    margin-bottom: -72px;
 
